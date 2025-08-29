@@ -1,81 +1,75 @@
-# 🔧 Predictive Maintenance of Renewable Energy Systems using Digital Twins
+Predictive Maintenance of Solar Panels Using Digital Twins – Statistical vs Deep Learning Time Series Forecasting
+📌 Overview
 
-This project explores how digital twin technology can be integrated with machine learning to implement predictive maintenance strategies for renewable energy systems, such as **solar panels** and **wind turbines**.
+This project investigates predictive maintenance for solar photovoltaic (PV) systems by integrating Digital Twin technology with time-series forecasting models. The study compares traditional statistical methods (ARIMA, SARIMA) with advanced deep learning approaches (LSTM, PatchTST) to optimize reliability, minimize downtime, and enhance operational efficiency of solar plants
+.
 
----
+The work demonstrates how Digital Twins provide real-time simulation, monitoring, and forecasting capabilities to predict system failures early, reduce maintenance costs, and support sustainable energy goals
+.
 
-## 📌 Objective
+🎯 Objectives
 
-To develop a framework that detects anomalies and forecasts potential failures in renewable energy assets using real-time sensor data and predictive modeling. This approach aims to optimize maintenance schedules, reduce operational costs, and extend asset life.
+Apply time-series forecasting for early fault detection in solar panels.
 
----
+Compare the performance of statistical models (ARIMA, SARIMA) vs. deep learning models (LSTM, PatchTST).
 
-## 💡 Project Overview
+Integrate forecasting into a Digital Twin framework for real-time decision-making.
 
-- **Domain**: Renewable Energy (Solar & Wind)
-- **Focus**: Predictive Maintenance using Digital Twins
-- **Techniques**: Machine Learning, Exploratory Data Analysis, Real-Time Monitoring
-- **Models**: Random Forest, Gradient Boosting, Neural Networks, Linear Regression
-- **Tools**: Python (Pandas, NumPy, Scikit-learn, TensorFlow), Jupyter, Visualisation Libraries
+Identify trade-offs between accuracy, computational cost, and robustness under varying weather conditions
+.
 
----
+🛠 Methodology
 
-## 🧪 Data Sources
+The project follows the CRISP-DM framework:
 
-The dataset includes both real-time and historical data from simulated or operational digital twin environments:
+Business Understanding – Optimize solar PV efficiency and reliability.
 
-- **Environmental Sensors**: Temperature, humidity, solar irradiance, wind speed
-- **Mechanical Sensors**: Vibration, power output, sound emissions
-- **Grid Data**: Energy yield, load imbalance, fault logs
+Data Understanding – Solar output, weather, irradiance, and related features.
 
----
+Data Preparation – Resampling, cleaning, and feature engineering.
 
-## ⚙️ Methodology
+Modeling – ARIMA, SARIMA, LSTM, and PatchTST models.
 
-- **Exploratory Data Analysis**: Identify trends, anomalies, and correlations using KPIs.
-- **Predictive Modeling**: Apply supervised ML models with k-fold cross-validation.
-- **Evaluation Metrics**: Precision, Recall, F1-Score, Mean Squared Error (MSE)
+Evaluation – Metrics such as MAE, MSE, MAPE, and MASE.
 
----
+Deployment – Digital Twin integration for real-time monitoring
+.
 
-## 🔍 Models Used
+📊 Results
 
-| Model               | Purpose                                    |
-|---------------------|--------------------------------------------|
-| Random Forest       | Non-linear predictions and feature ranking |
-| Gradient Boosting   | High accuracy on tabular data              |
-| Neural Networks     | Modeling complex patterns & behaviors      |
-| Linear Regression   | Benchmark model                            |
+ARIMA & SARIMA: Struggled with hourly data, producing oversimplified forecasts.
 
----
+LSTM: Best performing model with low error rates, capturing short-term variability and long-term seasonal trends.
 
-## 🧠 Expected Outcomes
+PatchTST: Efficient and scalable, but less robust under extreme weather conditions.
 
-- Reduced downtime for renewable assets
-- Improved maintenance scheduling
-- Scalable framework applicable to other renewable systems like hydro or geothermal
+Key Insight: LSTM provided the best trade-off between accuracy and computational efficiency, while PatchTST showed promise for scaling
+.
 
----
+📈 Key Metrics
 
-## 🧭 Future Scope
+MAE, MSE, MAPE, MASE used for model comparison.
 
-- Extend to real-time monitoring systems via IoT
-- Apply to hybrid renewable plants (solar + wind + hydro)
-- Integration with control systems for automated response
+LSTM achieved lowest error rates across all datasets.
 
----
+PatchTST yielded 73% MAPE under extreme conditions but remained computationally lightweight
+.
 
-## 📚 References
+🚀 Future Work
 
-The methodology is informed by academic and industry research in digital twins, predictive analytics, and energy systems. For a full reference list, see the final section of the report.
+Extend forecasting framework to other renewable energy sources (hydro, geothermal, biomass).
 
----
+Explore hybrid models combining statistical and deep learning approaches.
 
-## 👨‍🎓 Author
+Enhance interpretability of deep learning models for practical deployment.
 
-**Parimal Sawant**  
+Implement real-world digital twin prototypes for solar farms
+.
 
+📚 Keywords
 
----
+Predictive Maintenance · Solar PV · Digital Twin · ARIMA · SARIMA · LSTM · PatchTST · Time Series Forecasting · Renewable Energy
 
-> 📝 *This repository will be updated with code, notebooks, data samples, and visuals as the project progresses.*
+👨‍💻 Author
+
+MSc. in Data Analytics Research Project - Parimal Sawant
